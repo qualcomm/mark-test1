@@ -1,0 +1,15 @@
+name: Mark test
+
+on:
+  pull_request_target:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  mark:
+    name: Mark test
+    runs-on: ubuntu-latest
+    steps:
+      - name: mark step
+        run: echo $PWD
